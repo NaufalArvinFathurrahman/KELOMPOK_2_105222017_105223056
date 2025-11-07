@@ -1,0 +1,329 @@
+/* setingan dasar & color */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', system-ui, -apple-system, "Segoe UI", sans-serif;
+
+    color: #333333; /* default text color */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+    /* background */
+    background-color: #f5f4ed;
+}
+
+/* container cafe */
+.cafe-container {
+    width: 100%;
+    max-width: 1000px;
+    min-height: 500px; 
+
+    background-color: rgba(45, 48, 52, 0.1); 
+    backdrop-filter: blur(2px); 
+    -webkit-backdrop-filter: blur(2px); 
+
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.4);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+/* pp */
+.column.coffee-image {
+    padding: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column.coffee-image .avatar {
+    width: 100%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* data personal & data carir */
+.column.tagline,
+.column.our-favorite {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.column.our-favorite-image {
+    padding: 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.column.our-favorite-image .avatar {
+    width: 50%; 
+    aspect-ratio: 1 / 1; 
+    object-fit: cover; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); 
+}
+
+/* style heading */
+.column h2 {
+    color: #1f462e;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 30px 0;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(95, 99, 104, 0.5); 
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+/* style list data */
+.info-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.info-list li {
+    margin-bottom: 25px;
+}
+
+.info-list li strong {
+    display: block;
+    color: #1f462e;
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+}
+
+.info-list li span {
+    display: block;
+    color: #1f462e;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+/* adjustments container */
+@media (max-width: 800px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+        max-width: 450px;
+        min-height: 0;
+    }
+
+    .column.profile-image {
+        min-height: 350px; 
+    }
+
+    .column.profile-data,
+    .column.career-data {
+        border-top: none; 
+    }
+}
+
+
+/* skills.html */
+.column.contacts,
+.column.tech,
+.column.skills {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px; 
+    align-items: center;
+}
+
+.icon-list li {
+    display: flex;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.2); 
+    padding: 12px;
+    border-radius: 6px;
+    border: 1px solid rgba(95, 99, 104, 0.3);
+}
+
+.icon-list li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+.icon-list li span {
+    color: #e0e0e0;
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+
+/* grafik */
+.skill-chart-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto; 
+}
+
+.radar-chart {
+    width: 100%;
+    height: auto;
+}
+
+.grid-line {
+    fill: none;
+    stroke: #5f6368; 
+    stroke-width: 1;
+}
+
+.axis-line {
+    stroke: #5f6368; 
+    stroke-width: 1;
+}
+
+.skill-polygon {
+    fill: rgba(226, 116, 4, 0.5); 
+    stroke: #e27404; 
+    stroke-width: 2;
+}
+
+
+/* navigasi atas */
+.main-nav {
+    width: 100%;
+    max-width: 1000px;
+    margin-bottom: 20px; 
+    display: flex;
+    justify-content: center; 
+}
+
+.main-nav ul {
+    list-style: none; 
+    margin: 0;
+    padding: 0;
+    display: flex; 
+    gap: 10px; 
+}
+
+.main-nav a {
+    display: block;
+    padding: 12px 25px; 
+    background-color: #ffffff;
+    color: #1f462e;
+    text-decoration: none; 
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 6px;
+    border: 1px solid #1f462e;
+    transition: background-color 0.3s, color 0.3s;
+} 
+
+.main-nav a:hover {
+    background-color: #1f462e;
+    color: #ffffff;
+}
+
+.main-nav a.active {
+    background-color: #1f462e;
+    color: #ffffff;
+}
+
+/* navigasi kanan kiri */
+.page-nav-buttons {
+    position: fixed; 
+    top: 50%; 
+    transform: translateY(-50%); 
+    width: 100%;
+    max-width: calc(1000px + 200px); 
+    pointer-events: none; 
+    z-index: 1000; 
+}
+
+.nav-button {
+    pointer-events: auto; 
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px; 
+    height: 60px; 
+    background-color: #2d3034; 
+    border: 1px solid #4a4e54;
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, border-color 0.3s, transform 0.3s;
+}
+
+.nav-button svg {
+    fill: #e0e0e0; 
+    width: 30px; 
+    height: 30px;
+    transition: fill 0.3s;
+}
+
+.nav-button:hover {
+    background-color: #ffffff; 
+    border-color: #ffffff;
+    transform: scale(1.05); 
+}
+
+.nav-button:hover svg {
+    fill: #121315; 
+}
+
+.nav-button.prev-page {
+    left: 20px; 
+}
+
+.nav-button.next-page {
+    right: 20px; 
+}
+
+/* adjusment navigasi */
+@media (max-width: 1050px) {
+    .page-nav-buttons {
+        max-width: 100%; 
+    }
+
+    .nav-button {
+        bottom: 20px;
+        top: auto;
+        transform: translateY(0);
+    }
+    
+    .nav-button.prev-page {
+        left: 50%; 
+        transform: translateX(-110%);
+    }
+
+    .nav-button.next-page {
+        right: 50%; 
+        transform: translateX(110%);
+    }
+}
+
+@media (max-width: 600px) {
+    .page-nav-buttons {
+        display: none;
+    }
+}
