@@ -1,0 +1,38 @@
+#reservation-info {
+  background-color: #fff5eb;
+  padding: 1.5rem;
+  border-left: 5px solid #c2956b;
+  border-radius: 8px;
+}
+
+#reservation-form {
+  background-color: #fdf7f2;
+  border: 1px solid #e3cbb3;
+  border-radius: 10px;
+  padding: 1.5rem;
+}
+
+#reservation-form fieldset {
+  border: 1px solid #e2c4a8;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+#reservation-form legend {
+  color: #4d3229;
+  font-weight: 600;
+}
+
+#reservation-form button {
+  background-color: #b36a47 !important;
+  border: none;
+}
+
+#reservation-form button:hover {
+  background-color: #8f5031 !important;
+}
+
+#contact-alternative a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reservasi - Kafe Kopi Santai</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="../css/reservation.css">
+</head>
+<body>
+
+<header class="bg-dark text-white py-4 text-center">
+  <h1 class="fw-bold">☕ Kafe Kopi Santai</h1>
+</header>
+
+  <nav class="main-nav">
+    <ul>
+        <li><a href="index.html" class="active">Cafe Kopi Santai</a></li>
+        <li><a href="index.html" class="active">HOME</a></li>
+        <li><a href="menu.html">MENU</a></li>
+        <li><a href="about.html">TENTANG KAMI</a></li>
+        <li><a href="reservation.html">RESERVASI</a></li>
+      </ul>
+   </nav>
+
+<main class="container my-5">
+  <section id="reservation-info" class="mb-5">
+    <h2 class="border-start border-3 border-warning ps-3 mb-3">Reservasi Meja</h2>
+    <p>Pesan meja favorit Anda di Kafe Kopi Santai. Kami menyediakan berbagai pilihan tempat — dari meja reguler hingga ruangan privat. Pastikan melakukan reservasi minimal 1 hari sebelumnya.</p>
+    <ul>
+      <li>Reservasi berlaku maksimal untuk 10 orang per meja.</li>
+      <li>Waktu kedatangan toleransi 15 menit dari jadwal.</li>
+      <li>Pembatalan minimal 2 jam sebelumnya.</li>
+    </ul>
+  </section>
+
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+    <section id="reservation-form">
+      <form>
+        <fieldset class="mb-3">
+          <legend>Informasi Pribadi</legend>
+          <div class="mb-3">
+            <label for="nama">Nama Lengkap</label>
+            <input type="text" id="nama" name="nama" class="form-control" required placeholder="Masukkan nama lengkap Anda">
+          </div>
+          <div class="mb-3">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" class="form-control" required placeholder="contoh@email.com">
+          </div>
+          <div class="mb-3">
+            <label for="telp">No. Telepon</label>
+            <input type="tel" id="telp" name="telp" class="form-control" required placeholder="08xxxxxxxxxx">
+          </div>
+        </fieldset>
+
+        <fieldset class="mb-3">
+          <legend>Detail Reservasi</legend>
+          <div class="mb-3">
+            <label for="tanggal">Tanggal</label>
+            <input type="date" id="tanggal" name="tanggal" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="waktu">Waktu</label>
+            <input type="time" id="waktu" name="waktu" class="form-control" required>
+          </div>
+          <div class="mb-3">
+            <label for="jumlah">Jumlah Orang</label>
+            <select id="jumlah" name="jumlah" class="form-select" required>
+              <option value="">Pilih jumlah orang</option>
+              <option>1</option><option>2</option><option>3</option><option>4</option><option>5</option>
+              <option>6</option><option>7</option><option>8</option><option>9</option><option>10</option>
+            </select>
+          </div>
+          <div class="mb-3">
+            <label for="tipe">Tipe Meja</label>
+            <select id="tipe" name="tipe" class="form-select" required>
+              <option value="">Pilih tipe meja</option>
+              <option>Regular</option>
+              <option>Window Seat</option>
+              <option>Private Room</option>
+            </select>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Tambahan</legend>
+          <div class="mb-3">
+            <label for="catatan">Catatan Khusus</label>
+            <textarea id="catatan" name="catatan" class="form-control" rows="3" placeholder="Tulis permintaan khusus..."></textarea>
+          </div>
+          <div class="form-check mb-3">
+            <input type="checkbox" id="setuju" name="setuju" class="form-check-input" required>
+            <label for="setuju" class="form-check-label">Saya menyetujui syarat dan ketentuan.</label>
+          </div>
+        </fieldset>
+
+        <button type="submit" class="btn btn-warning w-100 fw-semibold">Kirim Reservasi</button>
+      </form>
+    </section>
+
+    <aside id="contact-alternative" class="p-4 bg-light rounded-3 border">
+      <h3 class="mb-3">Hubungi Kami</h3>
+      <p>Anda juga dapat melakukan reservasi melalui:</p>
+      <ul class="list-unstyled">
+        <li>📞 Telepon: 087788776618</li>
+        <li>💬 WhatsApp: <a href="#" class="text-decoration-none text-warning">+62 812-3456-7890</a></li>
+        <li>✉ Email: <a href="mailto:reservasi@kopisantai.id" class="text-decoration-none text-warning">reservasi@kopisantai.id</a></li>
+      </ul>
+    </aside>
+  </div>
+</main>
+
+<footer class="bg-dark text-white text-center py-3">
+  <p class="mb-0">© 2025 Kafe Kopi Santai</p>
+</footer>
+
+</body>
+</html>

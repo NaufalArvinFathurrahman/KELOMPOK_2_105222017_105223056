@@ -134,6 +134,25 @@ body, html {
     }
 }
 
+body {
+  background-color: #fff8ef;
+  font-family: 'Poppins', sans-serif;
+  color: #3b2f2f;
+}
+
+h2 {
+  color: #5a3e36;
+}
+
+footer {
+  font-size: 0.9rem;
+}
+
+blockquote {
+  font-size: 1rem;
+  color: #7a5c4f;
+  font-style: italic;
+}
 
 /* skills.html */
 .column.contacts,
